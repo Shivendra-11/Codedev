@@ -1,13 +1,11 @@
 "use client";
- 
 import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
 import { IconAppWindow } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import coursedata from "../Data/music_course.json"
-// import robo from "../images/robo.jpg"
-// import robo from "../images/robo.jpg"
+import robo from "../images/robo.jpg"
 
 interface Course {
         id: Number,
@@ -41,25 +39,24 @@ somecourses.map((course:Course)=>(
     <BackgroundGradient  className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
 
     <Image
-          src={"https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg"}  
+    
+          src={robo}
           alt="jordans"
-          height="400"
-          width="400"
+          height="500 px"
+          width="600 px"
           className="object-contain"
         />
         <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
-          Air Jordan 4 Retro Reimagined
+          Project name : DeepGuard
         </p>
  
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          The Air Jordan 4 Retro Reimagined Bred will release on Saturday,
-          February 17, 2024. Your best opportunity to get these right now is by
-          entering raffles and waiting for the official releases.
+          Project Description : This is a project that is made to detect the mask on the face of the person. It is made using the OpenCV and the Deep Learning model.
         </p>
         <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-          <span>Buy now </span>
+          <span> Overview</span>
           <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-            $100
+            View More
           </span>
         </button>
 
