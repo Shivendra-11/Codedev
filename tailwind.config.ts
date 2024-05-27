@@ -9,8 +9,20 @@ const config: Config = {
   darkMode: "class",  
   theme: {
     extend: {
+      blur: {
+        'sm': '4px',
+        'md': '8px',
+        'lg': '12px',
+        'xl': '16px',
+        '2xl': '24px',
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+      },
+      variants: {
+        extend: {
+          blur: ['hover', 'focus'],
+        },
       },
       keyframes: {
         spotlight: {

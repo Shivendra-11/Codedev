@@ -1,11 +1,17 @@
+"use client";
+
 import Link from "next/link"
 import { Spotlight } from "./ui/Spotlight"
 import { Button } from "./ui/moving-border";
 import Amazingtext from "./Amazingtext";
 import Searchbar from "./Searchbar";
+import Popup from "./Popup";
+import { useState } from "react";
 
 function HeroSection() {
+  const [showmodal , setShowmodal] = useState(false) ;
   return (
+
     <div
     className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0"
     >  
@@ -21,15 +27,16 @@ function HeroSection() {
             >Codev</h1>
             <Amazingtext/>
             <div className="mt-16">
-                <Link href={"/courses"}>
+              
                     {/* <Button
                     borderRadius="1.75rem"
                     className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
                     >
                     Explore courses
                     </Button> */}
-                    <button className="btn btn-primary">Explore Courses</button>
-                </Link>
+                    <button  onClick={()=>setShowmodal(true)} className="btn btn-primary">Explore Courses</button>
+                  {showmodal && < Popup  onClose={()=>setShowmodal(false)} />}
+             
             </div>
         </div>
 
