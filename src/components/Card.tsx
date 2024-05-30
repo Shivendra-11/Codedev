@@ -73,7 +73,7 @@ somecourses.map((course:Course)=>(
 
     {/* button  */}
     <div className="  text-center  mt-20 " >
-      <Link href={"/courses"} >
+      <Link href="/Allcourses" >
     <button className="btn glass text-white hover:bg-slate-950 ">Explore all courses</button>
     </Link>
     </div>
