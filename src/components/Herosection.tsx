@@ -16,7 +16,7 @@ function HeroSection() {
       <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
         <div className="absolute right-24 top-14 flex  gap-x-5">
           <Link href='/Login'>
-            <button className="btn btn-outline text-white ">Login page</button>
+            <button className="btn btn-outline text-white ">Login </button>
           </Link>
           <Link href={"/Signup"}>
             <button className="btn btn-active  btn-neutral text-white ">

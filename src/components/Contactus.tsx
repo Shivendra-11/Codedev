@@ -13,7 +13,7 @@ const ContactForm = () => {
           <div className="flex flex-col justify-center items-center">
             <form className="w-full max-w-md">
               <h3 className="text-2xl font-semibold mb-4 text-center flex items-center justify-center space-x-2">
-                <Image src="/send-icon.png" alt="Send Icon" width={28} height={28} />
+                {/* <Image src="/send-icon.png" alt="Send Icon" width={28} height={28} /> */}
                 Send Message
               </h3>
               <div className="mb-4">
@@ -36,7 +36,7 @@ const ContactForm = () => {
           <div className="flex flex-col justify-center items-center ">
             <div className="bg-gray-800 p-6 rounded-lg">
               <h3 className="text-2xl font-semibold mb-4 text-center flex items-center justify-center space-x-2">
-                <Image src="/info-icon.png" alt="Info Icon" width={28} height={28} />
+                {/* <Image src="/info-icon.png" alt="Info Icon" width={28} height={28} /> */}
                 Info
               </h3>
               <div className="mb-4 ">

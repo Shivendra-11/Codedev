@@ -1,5 +1,7 @@
 "use client"
 
+import Beamback from '@/components/Beamback';
+import { BackgroundBeams } from '@/components/ui/background-beams';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -72,6 +74,10 @@ const Page = () => {
             <img className="rounded-2xl" src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
           </div>
         </div>
+           
+      
+
+
       </section>
     </>
   );

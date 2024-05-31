@@ -1,5 +1,15 @@
 import type { Config } from "tailwindcss";
 
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -46,6 +56,8 @@ const config: Config = {
   },
   plugins: [
     require('daisyui'),
+    
+    [addVariablesForColors],
   ],
 };
 export default config;
